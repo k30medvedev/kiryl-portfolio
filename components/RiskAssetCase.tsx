@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function RiskAssetCase() {
   return (
-    <section id="risk-asset" className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target">
+    <section id="risk-asset-protection" className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target">
       <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
         SolbegSoft / Helmes — Risk & Asset Protection
       </h2>
@@ -16,26 +16,27 @@ export default function RiskAssetCase() {
       </p>
 
       <div className="mt-10 grid lg:grid-cols-2 gap-6 items-start">
-        {/* Left: regional adaptation diagram + small chart */}
+        {/* Left: diagram + chart */}
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="space-y-6"
         >
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <RegionalAdaptationDiagram />
-          </div>
+          <div className="space-y-6">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <RegionalAdaptationDiagram />
+            </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <BeforeAfterChart />
-            <p className="mt-2 text-sm text-white/70">
-              Fewer incidents after QA hardening &amp; adapter isolation (illustrative data).
-            </p>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <BeforeAfterChart />
+              <p className="mt-2 text-sm text-white/70">
+                Fewer incidents after QA hardening &amp; adapter isolation (illustrative data).
+              </p>
+            </div>
           </div>
         </motion.div>
 
-        {/* Right: my role + team + stack */}
+        {/* Right: my role */}
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
           <h3 className="text-sm inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 mb-4">
             My Role
