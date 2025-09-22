@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import StranglerDemo from "@/components/StranglerDemo";
-import MetricsDemo from "@/components/MetricsDemo";
 import Contact from "@/components/Contact";
 import CalendarCase from "@/components/CalendarCase";
 import ControlPlaneNotes from "@/components/ControlPlaneNotes";
