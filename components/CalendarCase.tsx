@@ -24,15 +24,14 @@ export default function CalendarCase() {
   const monthOffset = 2; // 0=Mon … 6=Sun
   const monthDays = 30;
 
-const days: DayCell[] = useMemo(() => {
-  const blanks = Array.from({ length: monthOffset }, () => ({}));
-  const nums = Array.from({ length: monthDays }, (_, i) => ({ num: i + 1 }));
-  const total = monthOffset + monthDays;              // сколько занятых ячеек
-  const target = Math.ceil(total / 7) * 7;            // ближайшее кратное 7
-  const pad = target - total;                         // сколько пустых ячеек нужно
-  return [...blanks, ...nums, ...Array.from({ length: pad }, () => ({}))];
-}, [monthOffset, monthDays]);
-
+  const days: DayCell[] = useMemo(() => {
+    const blanks = Array.from({ length: monthOffset }, () => ({}));
+    const nums = Array.from({ length: monthDays }, (_, i) => ({ num: i + 1 }));
+    const total = monthOffset + monthDays;          // сколько занято
+    const target = Math.ceil(total / 7) * 7;        // ближайшее кратное 7
+    const pad = target - total;                     // добивка пустыми
+    return [...blanks, ...nums, ...Array.from({ length: pad }, () => ({}))];
+  }, [monthOffset, monthDays]);
 
   // События месяца + кто выступает
   const events: Record<number, EventItem[]> = {
@@ -74,17 +73,17 @@ const days: DayCell[] = useMemo(() => {
         <div className="flex items-center gap-2 text-xs">
           <button
             onClick={() => setMode("month")}
-            className={`rounded-full px-2 py-1 ${
-              mode === "month" ? "bg-white/10" : "bg-white/10 opacity-60 hover:opacity-80"
-            }`}
+            className={`rounded-full px-2 py-1 ${mode === "month" ? "bg-white/10" : "bg-white/10 opacity-60 hover:opacity-80"}`}
+            aria-pressed={mode === "month"}
+            aria-label="Switch to month view"
           >
             Month
           </button>
           <button
             onClick={() => setMode("week")}
-            className={`rounded-full px-2 py-1 ${
-              mode === "week" ? "bg-white/10" : "bg-white/10 opacity-60 hover:opacity-80"
-            }`}
+            className={`rounded-full px-2 py-1 ${mode === "week" ? "bg-white/10" : "bg-white/10 opacity-60 hover:opacity-80"}`}
+            aria-pressed={mode === "week"}
+            aria-label="Switch to week view"
           >
             Week
           </button>
@@ -99,7 +98,7 @@ const days: DayCell[] = useMemo(() => {
             >
               ‹
             </button>
-            <span className="rounded-full bg-white/10 px-2 py-1">{weekLabel}</span>
+            <span className="rounded-full bg-white/10 px-2 py-1" aria-live="polite">{weekLabel}</span>
             <button
               onClick={() => setWeekIndex((w) => Math.min(weeks.length - 1, w + 1))}
               className="rounded-full bg-white/10 px-2 py-1 hover:bg-white/15"
@@ -129,11 +128,13 @@ const days: DayCell[] = useMemo(() => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.2 }}
-            className="relative z-10 grid grid-cols-7 gap-[6px]"
           >
-            {days.map((day, i) => (
-              <DayCellView key={i} day={day} events={events[day.num ?? -1]} />
-            ))}
+            {/* className перенесён внутрь для совместимости с типами framer-motion */}
+            <div className="relative z-10 grid grid-cols-7 gap-[6px]">
+              {days.map((day, i) => (
+                <DayCellView key={i} day={day} events={events[day.num ?? -1]} />
+              ))}
+            </div>
           </motion.div>
         ) : (
           <motion.div
@@ -142,11 +143,12 @@ const days: DayCell[] = useMemo(() => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.2 }}
-            className="relative z-10 grid grid-cols-7 gap-[6px]"
           >
-            {(weeks[weekIndex] ?? []).map((day, i) => (
-              <DayCellView key={i} day={day} events={events[day.num ?? -1]} />
-            ))}
+            <div className="relative z-10 grid grid-cols-7 gap-[6px]">
+              {(weeks[weekIndex] ?? []).map((day, i) => (
+                <DayCellView key={i} day={day} events={events[day.num ?? -1]} />
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
