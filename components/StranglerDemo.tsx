@@ -77,12 +77,13 @@ export default function StranglerDemo({ embedded = false }: StranglerProps) {
             />
             {!paused && (
               <motion.span
-                className="absolute -top-7 left-1/2 -translate-x-1/2 text-xs text-emerald-300"
                 initial={{ opacity: 0, y: -4 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                drag me
+                <span className="absolute -top-7 left-1/2 -translate-x-1/2 text-xs text-emerald-300">
+                  drag me
+                </span>
               </motion.span>
             )}
           </div>
