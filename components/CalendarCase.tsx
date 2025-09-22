@@ -194,54 +194,57 @@ function EventPill({ ev }: { ev: EventItem }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       whileHover={{ scale: 1.02 }}
-      className="group relative rounded-md bg-white/10 px-1.5 py-1"
-      aria-label={`${ev.title} — ${ev.tag} (${ev.prio})`}
     >
-      <div className="flex items-center justify-between gap-2">
-        <span className="text-[11px] leading-tight">{ev.title}</span>
+      <div
+        className="group relative rounded-md bg-white/10 px-1.5 py-1"
+        aria-label={`${ev.title} — ${ev.tag} (${ev.prio})`}
+      >
+        <div className="flex items-center justify-between gap-2">
+          <span className="text-[11px] leading-tight">{ev.title}</span>
 
-        {/* Аватары спикеров внутри события */}
-        {ev.speakers && ev.speakers.length > 0 && (
-          <div className="flex -space-x-1">
-            {ev.speakers.map((sid) => {
-              const s = SPEAKERS[sid];
-              return (
-                <div key={sid} className="relative group/avatar">
-                  <div className="flex h-5 w-5 items-center justify-center rounded-full border border-emerald-400/40 bg-emerald-500/20 text-[10px] font-semibold">
-                    {s.initials}
+          {/* Аватары спикеров внутри события */}
+          {ev.speakers && ev.speakers.length > 0 && (
+            <div className="flex -space-x-1">
+              {ev.speakers.map((sid) => {
+                const s = SPEAKERS[sid];
+                return (
+                  <div key={sid} className="relative group/avatar">
+                    <div className="flex h-5 w-5 items-center justify-center rounded-full border border-emerald-400/40 bg-emerald-500/20 text-[10px] font-semibold">
+                      {s.initials}
+                    </div>
+                    {/* тултип по спикеру */}
+                    <div className="pointer-events-none absolute left-1/2 top-full z-20 mt-1 -translate-x-1/2 whitespace-nowrap rounded-md border border-white/10 bg-black/70 px-2 py-1 text-[11px] text-white/90 opacity-0 transition-opacity group-hover/avatar:opacity-100">
+                      <b>{s.role}</b> — {s.name}
+                    </div>
                   </div>
-                  {/* тултип по спикеру */}
-                  <div className="pointer-events-none absolute left-1/2 top-full z-20 mt-1 -translate-x-1/2 whitespace-nowrap rounded-md border border-white/10 bg-black/70 px-2 py-1 text-[11px] text-white/90 opacity-0 transition-opacity group-hover/avatar:opacity-100">
-                    <b>{s.role}</b> — {s.name}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
 
-      <div className="mt-0.5 flex items-center justify-between">
-        <span className="text-[10px] text-emerald-300">{ev.tag}</span>
-        <span className="text-[10px] text-white/60">{ev.prio}</span>
-      </div>
+        <div className="mt-0.5 flex items-center justify-between">
+          <span className="text-[10px] text-emerald-300">{ev.tag}</span>
+          <span className="text-[10px] text-white/60">{ev.prio}</span>
+        </div>
 
-      {/* общий тултип события */}
-      <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0, y: 4 }}
-          whileHover={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 4 }}
-          transition={{ duration: 0.15 }}
-          className="pointer-events-none absolute left-0 top-full z-10 mt-1 w-max max-w-[240px] rounded-md border border-white/10 bg-black/70 px-2 py-1 text-[11px] text-white/90 shadow-lg"
-        >
-          <div>
-            <b>{ev.title}</b>
-          </div>
-          <div className="text-white/70">Tag: {ev.tag}</div>
-          <div className="text-white/70">Priority: {ev.prio}</div>
-        </motion.div>
-      </AnimatePresence>
+        {/* общий тултип события */}
+        <AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0, y: 4 }}
+            whileHover={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 4 }}
+            transition={{ duration: 0.15 }}
+            className="pointer-events-none absolute left-0 top-full z-10 mt-1 w-max max-w-[240px] rounded-md border border-white/10 bg-black/70 px-2 py-1 text-[11px] text-white/90 shadow-lg"
+          >
+            <div>
+              <b>{ev.title}</b>
+            </div>
+            <div className="text-white/70">Tag: {ev.tag}</div>
+            <div className="text-white/70">Priority: {ev.prio}</div>
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </motion.div>
   );
 }
