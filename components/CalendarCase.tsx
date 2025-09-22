@@ -228,22 +228,14 @@ function EventPill({ ev }: { ev: EventItem }) {
           <span className="text-[10px] text-white/60">{ev.prio}</span>
         </div>
 
-        {/* общий тултип события */}
-        <AnimatePresence>
-          <motion.div
-            initial={{ opacity: 0, y: 4 }}
-            whileHover={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 4 }}
-            transition={{ duration: 0.15 }}
-            className="pointer-events-none absolute left-0 top-full z-10 mt-1 w-max max-w-[240px] rounded-md border border-white/10 bg-black/70 px-2 py-1 text-[11px] text-white/90 shadow-lg"
-          >
-            <div>
-              <b>{ev.title}</b>
-            </div>
-            <div className="text-white/70">Tag: {ev.tag}</div>
-            <div className="text-white/70">Priority: {ev.prio}</div>
-          </motion.div>
-        </AnimatePresence>
+        {/* общий тултип события: CSS-only (без motion) */}
+        <div className="pointer-events-none absolute left-0 top-full z-10 mt-1 w-max max-w-[240px] rounded-md border border-white/10 bg-black/70 px-2 py-1 text-[11px] text-white/90 opacity-0 transition-opacity group-hover:opacity-100 shadow-lg">
+          <div>
+            <b>{ev.title}</b>
+          </div>
+          <div className="text-white/70">Tag: {ev.tag}</div>
+          <div className="text-white/70">Priority: {ev.prio}</div>
+        </div>
       </div>
     </motion.div>
   );
