@@ -75,7 +75,7 @@ export const projects: Project[] = [
       "JUnit",
       "Mockito",
     ],
-	links: [{ label: "Case", href: "#risk-asset" }],
+	links: [{ label: "Case", href: "#risk-asset-protection" }],
   },
 
   {

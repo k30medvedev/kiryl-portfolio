@@ -5,7 +5,7 @@ export default function PlatformNotes() {
       className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target"
     >
       <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
-        Notes — Platform (Security, Performance &amp; Observability)
+        Godel Platform — Security, Performance &amp; Observability
       </h2>
 
       <p className="text-neutral-700 max-w-3xl">

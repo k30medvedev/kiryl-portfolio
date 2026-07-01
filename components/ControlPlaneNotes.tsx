@@ -5,7 +5,7 @@ export default function ControlPlaneNotes() {
       className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target"
     >
       <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
-        Notes — Control-Plane (Step Functions + Lambda)
+        Control-Plane: Event-driven tenant workflows
       </h2>
 
       <p className="text-neutral-700 max-w-3xl">
