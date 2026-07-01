@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Cloud, Workflow } from "lucide-react";
 
 export default function Hero() {
@@ -37,13 +38,15 @@ export default function Hero() {
               </div>
             </div>
 
-            <div
-              className="shrink-0 w-36 h-36 sm:w-44 sm:h-44 rounded-3xl border-2 border-dashed border-neutral-300 bg-white/60 flex items-center justify-center text-center px-3"
-              aria-hidden="true"
-            >
-              <span className="text-[11px] font-mono leading-tight text-neutral-400">
-                photo →<br />public/avatar.jpg
-              </span>
+            <div className="shrink-0 w-36 h-36 sm:w-44 sm:h-44 rounded-3xl border border-neutral-200 shadow-soft overflow-hidden">
+              <Image
+                src="/avatar.jpg"
+                alt="Kiryl Miadzvedzeu"
+                width={176}
+                height={176}
+                priority
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
