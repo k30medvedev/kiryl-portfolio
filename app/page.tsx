@@ -25,7 +25,7 @@ export default function Page() {
       {/* ---- Shell Energy (2022–2024) ---- */}
       <section id="shell-energy" className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target">
         <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
-          Shell Energy
+          Notes — Shell Energy (Smart Metering Platform)
         </h2>
         <p className="text-neutral-700 max-w-3xl">
           Real-time metering for <strong>2,200,000+</strong> users; multiple meters per user
@@ -75,7 +75,7 @@ export default function Page() {
       {/* ---- Calendar (2020–2021) ---- */}
       <section id="calendar-case" className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target">
         <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
-          Automotive Group — Calendar Management System
+          Notes — Automotive Group (Calendar Management System)
         </h2>
 
         <p className="text-neutral-700 max-w-3xl">
