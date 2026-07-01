@@ -6,6 +6,7 @@ type Item = { id: string; label: string };
 
 // Статичный порядок (как на странице сверху вниз). Можно править по желанию.
 const STATIC_ITEMS: Item[] = [
+  { id: "platform-notes", label: "Platform" },
   { id: "control-plane-notes", label: "Control-Plane" },
   { id: "shell-energy", label: "Shell Energy" },
   { id: "risk-asset-protection", label: "Risk & Asset" },
@@ -96,8 +97,8 @@ export default function CasesNav() {
                 aria-current={isActive ? "true" : undefined}
                 className={`rounded-full px-3 py-1 border transition-colors ${
                   isActive
-                    ? "border-emerald-400/40 bg-emerald-500/15 text-emerald-200"
-                    : "border-white/10 bg-white/5 text-white/75 hover:text-white/90"
+                    ? "border-emerald-500/40 bg-emerald-50 text-emerald-700"
+                    : "border-neutral-200 bg-white text-neutral-600 hover:text-neutral-800"
                 }`}
               >
                 {label}

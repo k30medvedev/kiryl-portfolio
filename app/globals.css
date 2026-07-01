@@ -2,16 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light dark; }
+:root { color-scheme: light; }
 
 html, body {
   height: 100%;
 }
 
 .gradient-bg {
-  background: radial-gradient(1000px 600px at 20% -10%, rgba(59,130,246,0.25), transparent 60%),
-              radial-gradient(800px 500px at 120% 10%, rgba(16,185,129,0.25), transparent 60%),
-              radial-gradient(900px 600px at 50% 120%, rgba(244,114,182,0.22), transparent 60%);
+  background: radial-gradient(1000px 600px at 15% -10%, rgba(16,185,129,0.10), transparent 60%),
+              radial-gradient(800px 500px at 110% 5%, rgba(217,119,6,0.08), transparent 60%),
+              radial-gradient(900px 600px at 50% 120%, rgba(59,130,246,0.06), transparent 60%);
+}
+
+.font-display {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
 }
 
 html {

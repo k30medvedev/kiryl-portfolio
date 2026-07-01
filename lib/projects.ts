@@ -10,6 +10,30 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Godel Platform — Security, Performance & Observability",
+    period: "2025–Present",
+    summary:
+      "Shared Kubernetes platform on AWS for several product teams (insurance domain). Work splits evenly between building backend services and keeping the platform reliable and secure: automated DAST on every release, performance tests that guided migration of the busiest services to more scalable approaches, and unified logging that cut time to trace production issues.",
+    stack: [
+      "Java 21",
+      "Groovy",
+      "Spring Boot",
+      "Kafka",
+      "RabbitMQ",
+      "Kubernetes",
+      "Helm",
+      "FluxCD",
+      "Terraform",
+      "GitLab CI",
+      "AWS EKS",
+      "DAST",
+      "Gatling",
+      "Datadog",
+    ],
+    links: [{ label: "Case", href: "#platform-notes" }],
+  },
+
+  {
     title: "Automotive Group — Calendar Management System",
     period: "2021–2022",
     summary:

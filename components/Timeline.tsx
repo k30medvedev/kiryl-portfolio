@@ -7,9 +7,22 @@ export type ExperienceItem = {
 
 const items: ExperienceItem[] = [
   {
+    role: "Cloud Infrastructure Engineer / Backend Software Engineer",
+    company: "Godel Technologies",
+    period: "Jul 2025 – Present",
+    bullets: [
+      "Shared Kubernetes platform on AWS for several product teams (insurance domain)",
+      "Set up automated DAST on every release for public-facing endpoints",
+      "Built load/performance tests that guided migration of the busiest services to scalable approaches",
+      "Unified logging across the platform, cutting time to trace production issues",
+      "Kubernetes via Helm & FluxCD, Terraform for AWS (IAM, OIDC), secrets out of static config",
+      "Driving the team's AI-first adoption roadmap",
+    ],
+  },
+  {
     role: "Backend Software Engineer",
     company: "Godel Technologies",
-    period: "2024 – Present",
+    period: "2024 – 2025",
     bullets: [
       "Event-driven workflows: Step Functions, Lambda, EventBridge, SQS",
 	  "Team setup: 5 backend developers, 1 QA, 1 DevOps, 1 Tech Lead, 1 BA, 1 ADC",
@@ -57,23 +70,23 @@ const items: ExperienceItem[] = [
 export default function Timeline() {
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-16">
-      <h2 className="text-3xl sm:text-4xl font-semibold mb-8">Experience</h2>
+      <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-8">Experience</h2>
 
       <div className="relative pl-6">
         {/* timeline vertical line */}
-        <div className="absolute left-[10px] top-0 bottom-0 w-[2px] bg-white/10" />
+        <div className="absolute left-[10px] top-0 bottom-0 w-[2px] bg-neutral-100" />
 
         <ul className="space-y-10">
           {items.map((it) => (
             <li key={`${it.company}-${it.period}`} className="relative">
               {/* dot */}
-              <span className="absolute left-[-2px] top-1.5 h-3 w-3 rounded-full bg-emerald-400 shadow-[0_0_0_3px_rgba(16,185,129,0.25)]" />
+              <span className="absolute left-[-2px] top-1.5 h-3 w-3 rounded-full bg-emerald-500 shadow-[0_0_0_3px_rgba(16,185,129,0.25)]" />
               <div className="ml-4">
                 <h3 className="text-xl sm:text-2xl font-semibold">
-                  {it.role} — <span className="text-white/80">{it.company}</span>
+                  {it.role} — <span className="text-neutral-700">{it.company}</span>
                 </h3>
-                <p className="text-white/60 text-sm mt-1">{it.period}</p>
-                <ul className="mt-3 list-disc pl-5 space-y-2 text-white/85">
+                <p className="text-neutral-500 text-sm mt-1">{it.period}</p>
+                <ul className="mt-3 list-disc pl-5 space-y-2 text-neutral-700">
                   {it.bullets.map((b) => (
                     <li key={b}>{b}</li>
                   ))}

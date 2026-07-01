@@ -12,22 +12,22 @@ export default function Hero() {
       >
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="flex flex-col items-start gap-6">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
+            <span className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs text-neutral-700">
               <Workflow className="h-4 w-4" /> Event-driven • AWS • Java
             </span>
-            <h1 className="text-4xl sm:text-6xl font-semibold leading-tight">
-              Building scalable, observable <span className="text-emerald-400">cloud systems</span>
+            <h1 className="font-display text-4xl sm:text-6xl font-medium leading-[1.05]">
+              Systems that stay <span className="text-emerald-600">understandable</span> as they grow
             </h1>
-            <p className="max-w-2xl text-white/70">
-              Hi, I&apos;m Kiryl Miadzvedzeu — Senior Java/AWS Engineer. I design and deliver
-              event-driven platforms with Step Functions, Lambda, and DynamoDB. I love migrating
-              legacy to microservices, reducing latency & cost, and adding solid observability.
+            <p className="max-w-2xl text-neutral-600">
+              Kiryl Miadzvedzeu — Java / Cloud Software Engineer, Warsaw. Six years building
+              event-driven platforms on AWS (Step Functions, Lambda, EventBridge, DynamoDB) and
+              migrating legacy monoliths into microservices without breaking what already works.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="#projects" className="rounded-2xl bg-emerald-500/90 hover:bg-emerald-400 text-neutral-900 px-5 py-3 font-medium shadow-soft">
+              <a href="#projects" className="rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-neutral-900 px-5 py-3 font-medium shadow-soft">
                 View Projects
               </a>
-              <a href="#contact" className="rounded-2xl border border-white/15 px-5 py-3 font-medium text-white/90 hover:bg-white/5">
+              <a href="#contact" className="rounded-2xl border border-neutral-300 px-5 py-3 font-medium text-neutral-800 hover:bg-white">
                 Contact
               </a>
             </div>
