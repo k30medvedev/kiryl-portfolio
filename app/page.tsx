@@ -10,10 +10,9 @@ import CasesNav from "@/components/CasesNav";
 
 export default function Page() {
   return (
-    <main>
+    <main id="top">
       <Hero />
       <About />
-      <Projects />
       <Timeline />
       <CasesNav />
 
@@ -64,7 +63,7 @@ export default function Page() {
             </ul>
 
             <div className="mt-6">
-              <a href="#projects" className="text-sm text-emerald-700 hover:text-emerald-700">↑ Back to Projects</a>
+              <a href="#platform-notes" className="text-sm text-emerald-700 hover:text-emerald-700">↑ Back to cases</a>
             </div>
           </div>
         </div>
@@ -109,12 +108,13 @@ export default function Page() {
             </ul>
 
             <div className="mt-6">
-              <a href="#projects" className="text-sm text-emerald-700 hover:text-emerald-600">↑ Back to Projects</a>
+              <a href="#platform-notes" className="text-sm text-emerald-700 hover:text-emerald-600">↑ Back to cases</a>
             </div>
           </div>
         </div>
       </section>
 
+      <Projects />
       <Contact />
 
       <footer className="mx-auto max-w-6xl px-6 pb-12 text-sm text-neutral-500">

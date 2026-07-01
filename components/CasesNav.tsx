@@ -85,7 +85,7 @@ export default function CasesNav() {
   };
 
   return (
-    <nav className="sticky top-3 z-20 mx-auto max-w-6xl px-6 py-2 mb-2" aria-label="Cases navigation">
+    <nav className="sticky top-16 z-20 mx-auto max-w-6xl px-6 py-2 mb-2 bg-stone-50/90 backdrop-blur" aria-label="Cases navigation">
       <ul className="flex overflow-x-auto scrollbar-thin gap-2 text-sm [mask-image:linear-gradient(to_right,transparent,black_24px,black_calc(100%-24px),transparent)]">
         {STATIC_ITEMS.map(({ id, label }) => {
           const isActive = active === id;

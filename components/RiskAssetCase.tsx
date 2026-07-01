@@ -39,7 +39,7 @@ export default function RiskAssetCase() {
           </ul>
 
           <div className="mt-6">
-            <a href="#projects" className="text-sm text-emerald-700 hover:text-emerald-600">↑ Back to Projects</a>
+            <a href="#platform-notes" className="text-sm text-emerald-700 hover:text-emerald-600">↑ Back to cases</a>
           </div>
         </div>
       </div>

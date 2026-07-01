@@ -3,6 +3,7 @@ export type ExperienceItem = {
   company: string;
   period: string;
   bullets: string[];
+  caseId?: string;
 };
 
 const items: ExperienceItem[] = [
@@ -12,12 +13,10 @@ const items: ExperienceItem[] = [
     period: "Jul 2025 – Present",
     bullets: [
       "Shared Kubernetes platform on AWS for several product teams (insurance domain)",
-      "Set up automated DAST on every release for public-facing endpoints",
-      "Built load/performance tests that guided migration of the busiest services to scalable approaches",
-      "Unified logging across the platform, cutting time to trace production issues",
-      "Kubernetes via Helm & FluxCD, Terraform for AWS (IAM, OIDC), secrets out of static config",
+      "Focus areas: endpoint security, performance of the busiest services, observability",
       "Driving the team's AI-first adoption roadmap",
     ],
+    caseId: "platform-notes",
   },
   {
     role: "Backend Software Engineer",
@@ -25,11 +24,10 @@ const items: ExperienceItem[] = [
     period: "2024 – 2025",
     bullets: [
       "Event-driven workflows: Step Functions, Lambda, EventBridge, SQS",
-	  "Team setup: 5 backend developers, 1 QA, 1 DevOps, 1 Tech Lead, 1 BA, 1 ADC",
+      "Team: 5 backend developers, 1 QA, 1 DevOps, 1 Tech Lead, 1 BA, 1 ADC · Scrum + Kanban",
       "−25% Lambda cost, −30% latency via optimization",
-      "Observability with CloudWatch & X-Ray",
-	  "Process: Scrum mixed with Kanban for delivery flexibility",
     ],
+    caseId: "control-plane-notes",
   },
   {
     role: "Backend Software Engineer",
@@ -38,9 +36,9 @@ const items: ExperienceItem[] = [
     bullets: [
       "Smart metering platform; hundreds of microservices",
       "Java 8 → 17, Spring 2.3 → 3.0 modernization",
-      "Shared libraries, 98% bug-free releases with robust tests",
-      "Agile workflow: Scrum + Kanban hybrid",
+      "98% bug-free releases · Scrum + Kanban hybrid",
     ],
+    caseId: "shell-energy",
   },
   {
     role: "Backend Software Engineer",
@@ -48,22 +46,21 @@ const items: ExperienceItem[] = [
     period: "2021 – 2022",
     bullets: [
       "Risk management & asset protection for automotive/property insurance",
+      "Team: 1 Tech Lead + 5 developers + 1 ADC · Scrum + Kanban hybrid",
       "Migrated parts of a legacy monolith to microservices; QA hardening",
-	  "Team setup: 1 Tech Lead + 5 developers + 1 ADC",
-	  "Agile workflow: Scrum + Kanban hybrid",
     ],
+    caseId: "risk-asset-protection",
   },
   {
     role: "Backend Software Engineer",
     company: "Automotive Group — Calendar Management System",
     period: "2020 – 2021",
     bullets: [
-      "Greenfield internal Google-style calendar (events, filters/tags/priorities, speaker profiles with photo & talk details)",
+      "Greenfield internal Google-style calendar system",
       "Sole backend engineer in a 6-person team (1 BE + 5 FE)",
-	  "Team setup: 9 backend developers, 1 ADC, 1 Tech Lead",
       "Built from scratch in ~10 months + 2 months production support",
-	  "Process: Scrum ceremonies with Kanban flow for tasks",
     ],
+    caseId: "calendar-case",
   },
 ];
 
@@ -91,6 +88,11 @@ export default function Timeline() {
                     <li key={b}>{b}</li>
                   ))}
                 </ul>
+                {it.caseId ? (
+                  <a href={`#${it.caseId}`} className="mt-3 inline-block text-sm text-emerald-700 hover:text-emerald-600">
+                    → Full case study
+                  </a>
+                ) : null}
               </div>
             </li>
           ))}

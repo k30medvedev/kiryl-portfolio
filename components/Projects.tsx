@@ -7,7 +7,7 @@ import { projects } from "@/lib/projects";
 function ProjectCard({ p, idx }: { p: Project; idx: number }) {
   return (
     <motion.div
-      className="h-full"
+      style={{ height: "100%" }}
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
