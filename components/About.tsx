@@ -34,6 +34,10 @@ export default function About() {
             <li>• English B2 · Russian C2 · Belarusian C2 · Polish A2</li>
             <li>• Currently: Backend &amp; Cloud Infrastructure Engineer at Godel Technologies</li>
             <li>• On-call rotation, production incidents (incident.io, Datadog)</li>
+            <li>• <span className="font-semibold">AWS certified:</span>{" "}
+              <a href="https://www.credly.com/badges/49ec26b1-f4c7-4c51-829b-217e4889f3c7" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-600 underline underline-offset-2">Developer – Associate</a>,{" "}
+              <a href="https://www.credly.com/badges/ec5398e4-89fc-401e-96c8-68bfa4f54db4" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-600 underline underline-offset-2">Cloud Practitioner</a>
+            </li>
             <li>• Daily AI-assisted delivery: Claude Code, MCP, GitLab Duo</li>
           </ul>
         </div>

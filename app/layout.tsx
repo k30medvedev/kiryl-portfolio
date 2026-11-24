@@ -39,6 +39,10 @@ const personJsonLd = {
   email: "mailto:k30medvedev@gmail.com",
   address: { "@type": "PostalAddress", addressLocality: "Warsaw", addressCountry: "PL" },
   sameAs: ["https://www.linkedin.com/in/kiryl-miadzvedzeu", "https://github.com/k30medvedev"],
+  hasCredential: [
+    { "@type": "EducationalOccupationalCredential", name: "AWS Certified Developer – Associate", url: "https://www.credly.com/badges/49ec26b1-f4c7-4c51-829b-217e4889f3c7" },
+    { "@type": "EducationalOccupationalCredential", name: "AWS Certified Cloud Practitioner", url: "https://www.credly.com/badges/ec5398e4-89fc-401e-96c8-68bfa4f54db4" },
+  ],
   knowsAbout: ["Java", "Spring Boot", "AWS", "Kubernetes", "Terraform", "Kafka", "Event-driven architecture", "Microservices"],
 };
 

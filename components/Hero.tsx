@@ -21,7 +21,7 @@ export default function Hero() {
                 Systems that stay <span className="text-emerald-700">understandable</span> as they grow
               </h1>
               <p className="max-w-2xl text-lg text-neutral-800 font-medium">
-                Kiryl Miadzvedzeu — Senior Java Backend &amp; Cloud Platform Engineer, Warsaw.
+                Kiryl Miadzvedzeu — Senior Java Backend &amp; Cloud Platform Engineer, Warsaw. AWS Certified Developer – Associate.
               </p>
               <p className="max-w-2xl text-neutral-600">
                 6+ years building and running microservices and event-driven systems on AWS. Today I
