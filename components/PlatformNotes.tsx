@@ -11,7 +11,9 @@ export default function PlatformNotes() {
 
       <p className="text-neutral-700 max-w-3xl">
         <strong>Project.</strong> A high-load insurance comparison platform: customers compare
-        offers from multiple insurers in one place. Several product teams build and run their
+        offers from multiple insurers in one place. The platform is integrated with UK insurers, an
+        insurance broker and a major price comparison website; I took part in integrating and
+        modernizing these partner integrations. Several product teams build and run their
         services on a shared Kubernetes platform on AWS (EKS), backed by MySQL and DynamoDB, with
         Kafka and RabbitMQ between services. My work splits roughly evenly between backend services
         in Java and Groovy and keeping the platform itself secure, fast and recoverable.
@@ -20,6 +22,7 @@ export default function PlatformNotes() {
       <div className="mt-8 rounded-2xl border border-neutral-200 bg-white p-6">
         <h3 className="text-lg font-semibold">What this means for an insurance business</h3>
         <ul className="mt-3 grid md:grid-cols-2 gap-x-8 gap-y-2 text-neutral-700">
+          <li>• <span className="font-semibold">Partner integrations</span> with UK insurers, a broker and a price comparison website — integrated and modernized, not just maintained.</li>
           <li>• <span className="font-semibold">Customer-facing endpoints</span> are security-tested automatically on every release (DAST), not when someone remembers to.</li>
           <li>• <span className="font-semibold">Busiest services</span> are load-tested and optimized — up to 30% faster after fixing N+1 queries, timeouts and caching.</li>
           <li>• <span className="font-semibold">Infrastructure failures</span> don&apos;t take services down: after a disaster recovery exercise, every service is safely disruptable.</li>

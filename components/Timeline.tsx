@@ -13,6 +13,7 @@ const items: ExperienceItem[] = [
     period: "Jul 2025 – Present",
     bullets: [
       "High-load insurance aggregator (client under NDA): shared Kubernetes platform on AWS for several product teams",
+      "Integrated and modernized partner integrations with UK insurers, a broker and a price comparison website",
       "Automated DAST on every release; performance tests + optimization → up to 30% faster services",
       "Disaster recovery exercise → all services safely disruptable; on-call for production incidents",
       "AI-assisted delivery (Claude Code + MCP, three-stage review); onboarding owner for the project",
