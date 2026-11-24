@@ -5,16 +5,27 @@ export default function PlatformNotes() {
       className="scroll-mt-40 md:scroll-mt-32 mx-auto max-w-6xl px-6 py-16 anchor-target"
     >
       <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
-        Godel Platform — Security, Performance &amp; Observability
+        Insurance Aggregator Platform — Security, Performance &amp; Reliability
       </h2>
+      <p className="text-sm text-neutral-500 mb-4">Jul 2025 – present · via Godel Technologies · client under NDA</p>
 
       <p className="text-neutral-700 max-w-3xl">
-        <strong>Project.</strong> A Kubernetes platform on AWS, shared by several product teams in
-        the insurance domain. My work splits roughly evenly between building backend services and
-        keeping the platform reliable and secure. Over the past year the focus has been on three
-        things the team feels directly: the security of our public endpoints, the performance of
-        the busiest services, and how fast we can track down a bug in production.
+        <strong>Project.</strong> A high-load insurance comparison platform: customers compare
+        offers from multiple insurers in one place. Several product teams build and run their
+        services on a shared Kubernetes platform on AWS (EKS), backed by MySQL and DynamoDB, with
+        Kafka and RabbitMQ between services. My work splits roughly evenly between backend services
+        in Java and Groovy and keeping the platform itself secure, fast and recoverable.
       </p>
+
+      <div className="mt-8 rounded-2xl border border-neutral-200 bg-white p-6">
+        <h3 className="text-lg font-semibold">What this means for an insurance business</h3>
+        <ul className="mt-3 grid md:grid-cols-2 gap-x-8 gap-y-2 text-neutral-700">
+          <li>• <span className="font-semibold">Customer-facing endpoints</span> are security-tested automatically on every release (DAST), not when someone remembers to.</li>
+          <li>• <span className="font-semibold">Busiest services</span> are load-tested and optimized — up to 30% faster after fixing N+1 queries, timeouts and caching.</li>
+          <li>• <span className="font-semibold">Infrastructure failures</span> don&apos;t take services down: after a disaster recovery exercise, every service is safely disruptable.</li>
+          <li>• <span className="font-semibold">Production incidents</span> are traced faster thanks to unified logging, and handled through an on-call rotation.</li>
+        </ul>
+      </div>
 
       <div className="mt-10 grid md:grid-cols-2 gap-6">
         <div className="rounded-2xl border border-neutral-200 bg-white p-6">

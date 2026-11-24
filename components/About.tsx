@@ -29,6 +29,7 @@ export default function About() {
           </h3>
           <ul className="space-y-2 text-neutral-700 text-sm">
             <li>• 6+ years, Java / AWS / event-driven systems</li>
+            <li>• <span className="font-semibold">Insurance domain: 2+ years</span> — insurance aggregator platform; risk &amp; asset protection for automotive / property insurance</li>
             <li>• Warsaw, Poland · B2B · Remote / Hybrid / On-site</li>
             <li>• English B2 · Russian C2 · Belarusian C2 · Polish A2</li>
             <li>• Currently: Backend &amp; Cloud Infrastructure Engineer at Godel Technologies</li>

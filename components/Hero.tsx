@@ -15,7 +15,7 @@ export default function Hero() {
           <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
             <div className="flex flex-col items-start gap-6">
               <span className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs text-neutral-700">
-                <Workflow className="h-4 w-4" /> Java • AWS • Kubernetes • AI-assisted delivery
+                <Workflow className="h-4 w-4" /> Java • AWS • Kubernetes • Insurance domain • AI-assisted delivery
               </span>
               <h1 className="font-display text-4xl sm:text-6xl font-medium leading-[1.05]">
                 Systems that stay <span className="text-emerald-700">understandable</span> as they grow
@@ -26,7 +26,7 @@ export default function Hero() {
               <p className="max-w-2xl text-neutral-600">
                 6+ years building and running microservices and event-driven systems on AWS. Today I
                 split my time between backend services and a shared Kubernetes platform used by
-                several product teams: endpoint security, performance of high-load services,
+                several product teams of a high-load insurance aggregator: endpoint security, performance of high-load services,
                 disaster recovery, observability and on-call. I ship with Claude Code and MCP
                 integrations inside strict, human-owned quality gates.
               </p>

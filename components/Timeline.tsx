@@ -12,7 +12,7 @@ const items: ExperienceItem[] = [
     company: "Godel Technologies",
     period: "Jul 2025 – Present",
     bullets: [
-      "Shared Kubernetes platform on AWS for several product teams; high-load insurance aggregator",
+      "High-load insurance aggregator (client under NDA): shared Kubernetes platform on AWS for several product teams",
       "Automated DAST on every release; performance tests + optimization → up to 30% faster services",
       "Disaster recovery exercise → all services safely disruptable; on-call for production incidents",
       "AI-assisted delivery (Claude Code + MCP, three-stage review); onboarding owner for the project",

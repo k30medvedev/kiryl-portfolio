@@ -6,7 +6,7 @@ type Item = { id: string; label: string };
 
 // Статичный порядок (как на странице сверху вниз). Можно править по желанию.
 const STATIC_ITEMS: Item[] = [
-  { id: "platform-notes", label: "Platform" },
+  { id: "platform-notes", label: "Insurance aggregator" },
   { id: "control-plane-notes", label: "Control-Plane" },
   { id: "shell-energy", label: "Shell Energy" },
   { id: "risk-asset-protection", label: "Risk & Asset" },

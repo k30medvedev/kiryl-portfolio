@@ -12,7 +12,7 @@ const fraunces = Fraunces({
 const SITE_URL = "https://kirylmiadzvedzeu.com";
 const TITLE = "Kiryl Miadzvedzeu — Senior Java Backend & Cloud Platform Engineer";
 const DESCRIPTION =
-  "Senior Java backend engineer in Warsaw, 6+ years: microservices and event-driven systems on AWS, Kubernetes platform (EKS, Terraform, Helm, FluxCD), performance, disaster recovery, on-call, and AI-assisted delivery with Claude Code + MCP.";
+  "Senior Java backend engineer in Warsaw, 6+ years, 2+ years in the insurance domain (insurance aggregator, automotive/property insurance): microservices and event-driven systems on AWS, Kubernetes platform (EKS, Terraform, Helm, FluxCD), performance, disaster recovery, on-call, and AI-assisted delivery with Claude Code + MCP.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
