@@ -8,10 +8,10 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Godel Platform — Security, Performance & Observability",
+    title: "Insurance Aggregator Platform — Security, Performance & Reliability",
     period: "2025–Present",
     summary:
-      "Shared Kubernetes platform on AWS for several product teams (insurance domain). Work splits evenly between backend services and platform reliability and security: automated DAST on every release, performance testing and optimization (up to 30% faster services), a disaster recovery exercise that made every service safely disruptable, unified logging, on-call for production incidents, and AI-assisted delivery with Claude Code + MCP.",
+      "High-load insurance comparison platform (client under NDA): customers compare offers from multiple insurers. Shared Kubernetes platform on AWS for several product teams. Work splits evenly between backend services and platform reliability and security: automated DAST on every release, performance testing and optimization (up to 30% faster services), a disaster recovery exercise that made every service safely disruptable, unified logging, on-call for production incidents, and AI-assisted delivery with Claude Code + MCP.",
     stack: [
       "Java 21",
       "Groovy",
