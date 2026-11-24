@@ -23,7 +23,7 @@ export default function PlatformNotes() {
         <h3 className="text-lg font-semibold">What this means for an insurance business</h3>
         <ul className="mt-3 grid md:grid-cols-2 gap-x-8 gap-y-2 text-neutral-700">
           <li>• <span className="font-semibold">Partner integrations</span> with UK insurers, a broker and a price comparison website — integrated and modernized, not just maintained.</li>
-          <li>• <span className="font-semibold">Customer-facing endpoints</span> are security-tested automatically on every release (DAST), not when someone remembers to.</li>
+          <li>• <span className="font-semibold">Security</span> is continuous: customer-facing endpoints are tested on every release (DAST), dependencies are updated automatically (Renovate), and every CVE is checked for real reachability before it is prioritized.</li>
           <li>• <span className="font-semibold">Busiest services</span> are load-tested and optimized — up to 30% faster after fixing N+1 queries, timeouts and caching.</li>
           <li>• <span className="font-semibold">Infrastructure failures</span> don&apos;t take services down: after a disaster recovery exercise, every service is safely disruptable.</li>
           <li>• <span className="font-semibold">Production incidents</span> are traced faster thanks to unified logging, and handled through an on-call rotation.</li>
@@ -35,6 +35,7 @@ export default function PlatformNotes() {
           <h3 className="text-lg font-semibold">Key decisions &amp; practices</h3>
           <ul className="mt-3 space-y-2 text-neutral-700">
             <li>• <span className="font-semibold">Automated DAST</span> on every release for public-facing endpoints — security checks used to be manual and easy to skip.</li>
+            <li>• <span className="font-semibold">Vulnerability management</span>: set up Renovate for dependency updates; monitor vulnerabilities, assess whether each CVE is actually reachable in our code, and fix CVEs manually where an automated update is not enough.</li>
             <li>• <span className="font-semibold">Load &amp; performance testing</span> (Gatling) on the heaviest services, then optimization: removed timeouts, fixed N+1 queries, tuned caches, reduced pod load — individual services up to <strong>30% faster</strong>.</li>
             <li>• <span className="font-semibold">Disaster recovery</span>: ran a DR exercise and, based on its findings, made every service safely disruptable.</li>
             <li>• <span className="font-semibold">Service-to-service auth</span>: integrated M2M tokens between internal services.</li>

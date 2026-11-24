@@ -7,7 +7,7 @@ export default function About() {
         <div className="lg:col-span-2 space-y-5 text-neutral-700 leading-relaxed">
           <p>
             I&apos;m a senior Java backend engineer who also owns the platform underneath: Kubernetes
-            on AWS with Terraform, Helm and FluxCD. Recent work: automated DAST on every release,
+            on AWS with Terraform, Helm and FluxCD. Recent work: application security (DAST on every release, Renovate, CVE triage with reachability analysis),
             performance tests and optimizations that made individual services up to 30% faster, a
             disaster recovery exercise after which every service became safely disruptable, and
             unified logging that made production incidents faster to trace.
