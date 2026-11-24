@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: TITLE,
     description: DESCRIPTION,
-    images: [{ url: "/avatar.jpg", alt: "Kiryl Miadzvedzeu" }],
+    images: [{ url: "/og.png", width: 1200, height: 627, alt: "Kiryl Miadzvedzeu — Senior Java Backend & Cloud Platform Engineer" }],
   },
-  twitter: { card: "summary", title: TITLE, description: DESCRIPTION, images: ["/avatar.jpg"] },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/og.png"] },
 };
 
 const personJsonLd = {
