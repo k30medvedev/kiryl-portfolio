@@ -1,6 +1,6 @@
 export default function RiskAssetCase() {
   return (
-    <section id="risk-asset-protection" className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target">
+    <section id="risk-asset-protection" className="scroll-mt-40 md:scroll-mt-32 mx-auto max-w-6xl px-6 py-16 anchor-target">
       <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
         SolbegSoft / Helmes — Risk & Asset Protection
       </h2>
