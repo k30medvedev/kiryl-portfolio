@@ -6,22 +6,20 @@ export default function About() {
       <div className="grid lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-5 text-neutral-700 leading-relaxed">
           <p>
-            For me the point of the job is solving real business problems, not just writing code —
-            and good agile practice is how that actually happens. Refinements, retrospectives, and
-            three-amigos sessions matter, because that&apos;s where misunderstandings get cleared
-            up before they turn into rework.
+            I&apos;m a senior Java backend engineer who also owns the platform underneath: Kubernetes
+            on AWS with Terraform, Helm and FluxCD. Recent work: automated DAST on every release,
+            performance tests and optimizations that made individual services up to 30% faster, a
+            disaster recovery exercise after which every service became safely disruptable, and
+            unified logging that made production incidents faster to trace.
           </p>
           <p>
-            Clear, transparent systems give more stable results than clever ones. I build things to
-            be easy to reason about, and I&apos;ve found that small, incremental improvements tend
-            to add up to serious results over time. I lean on my team and trust it, while everyone
-            keeps individual ownership of their own work — knowledge is best shared openly rather
-            than locked in one person&apos;s head.
+            Clear, transparent systems give more stable results than clever ones, and small
+            incremental improvements add up. I weigh risk before a task starts — is there a retry,
+            a fallback, a plan B — not after it breaks in production.
           </p>
           <p>
-            Risk is best weighed before a task is taken on, not after. As a backend engineer,
-            &quot;what happens if this goes wrong&quot; is always running in the background — is
-            there a plan B, a retry, a fallback, thought through from the start.
+            Knowledge should be shared, not locked in one head: I&apos;m responsible for onboarding
+            every new engineer on my project and built its knowledge platform from scratch.
           </p>
         </div>
 
@@ -33,7 +31,9 @@ export default function About() {
             <li>• 6+ years, Java / AWS / event-driven systems</li>
             <li>• Warsaw, Poland · B2B · Remote / Hybrid / On-site</li>
             <li>• English B2 · Russian C2 · Belarusian C2 · Polish A2</li>
-            <li>• Currently: Cloud Infrastructure &amp; Backend Engineer at Godel Technologies</li>
+            <li>• Currently: Backend &amp; Cloud Infrastructure Engineer at Godel Technologies</li>
+            <li>• On-call rotation, production incidents (incident.io, Datadog)</li>
+            <li>• Daily AI-assisted delivery: Claude Code, MCP, GitLab Duo</li>
           </ul>
         </div>
       </div>

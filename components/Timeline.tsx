@@ -8,13 +8,14 @@ export type ExperienceItem = {
 
 const items: ExperienceItem[] = [
   {
-    role: "Cloud Infrastructure Engineer / Backend Software Engineer",
+    role: "Backend & Cloud Infrastructure Engineer",
     company: "Godel Technologies",
     period: "Jul 2025 – Present",
     bullets: [
-      "Shared Kubernetes platform on AWS for several product teams (insurance domain)",
-      "Focus areas: endpoint security, performance of the busiest services, observability",
-      "Driving the team's AI-first adoption roadmap",
+      "Shared Kubernetes platform on AWS for several product teams; high-load insurance aggregator",
+      "Automated DAST on every release; performance tests + optimization → up to 30% faster services",
+      "Disaster recovery exercise → all services safely disruptable; on-call for production incidents",
+      "AI-assisted delivery (Claude Code + MCP, three-stage review); onboarding owner for the project",
     ],
     caseId: "platform-notes",
   },
@@ -35,7 +36,7 @@ const items: ExperienceItem[] = [
     period: "2022 – 2024",
     bullets: [
       "Smart metering platform; hundreds of microservices",
-      "Java 8 → 17, Spring 2.3 → 3.0 modernization",
+      "Java 8 → 17, Spring Boot 2.3 → 3.0 modernization; reusable libraries −30% dev time",
       "98% bug-free releases · Scrum + Kanban hybrid",
     ],
     caseId: "shell-energy",
@@ -53,7 +54,7 @@ const items: ExperienceItem[] = [
   },
   {
     role: "Backend Software Engineer",
-    company: "Automotive Group — Calendar Management System",
+    company: "SolbegSoft / Helmes Group — Calendar Management System",
     period: "2020 – 2021",
     bullets: [
       "Greenfield internal Google-style calendar system",

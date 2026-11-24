@@ -1,5 +1,3 @@
-import Projects from "@/components/Projects";
-
 export type Project = {
   title: string;
   period: string;
@@ -13,7 +11,7 @@ export const projects: Project[] = [
     title: "Godel Platform — Security, Performance & Observability",
     period: "2025–Present",
     summary:
-      "Shared Kubernetes platform on AWS for several product teams (insurance domain). Work splits evenly between building backend services and keeping the platform reliable and secure: automated DAST on every release, performance tests that guided migration of the busiest services to more scalable approaches, and unified logging that cut time to trace production issues.",
+      "Shared Kubernetes platform on AWS for several product teams (insurance domain). Work splits evenly between backend services and platform reliability and security: automated DAST on every release, performance testing and optimization (up to 30% faster services), a disaster recovery exercise that made every service safely disruptable, unified logging, on-call for production incidents, and AI-assisted delivery with Claude Code + MCP.",
     stack: [
       "Java 21",
       "Groovy",
@@ -34,48 +32,22 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Automotive Group — Calendar Management System",
-    period: "2021–2022",
+    title: "Control-Plane: Event-driven tenant workflows",
+    period: "2024–2025",
     summary:
-      "Internal Google-style calendar for an automotive group: schedule and manage events with filters, tags, and priorities; speaker profiles with photo + talk details; multi-user views for departments.",
+    "Internal multi-tenant control-plane for a SaaS platform: orchestrates full tenant lifecycle (onboarding, configuration, offboarding) using AWS Step Functions + Lambda. Implemented saga patterns with compensations, idempotency, fan-out/fan-in, and async SQS jobs. Built observability with CloudWatch/X-Ray and fault-tolerant retries. Achieved −25% Lambda cost and −30% p95 latency through provisioned concurrency, batching, and payload optimizations.",
     stack: [
-      "Java 11",
-      "Spring",
-      "Hibernate",
-      "Gradle",
-      "MS SQL",
-      "Flyway",
-      "RabbitMQ",
-      "Docker",
-      "GitLab CI",
-      "Testcontainers",
-      "JUnit",
-      "Mockito",
-      "Swagger/OpenAPI",
+      "Java 21",
+      "Spring Boot",
+      "AWS Lambda",
+      "Step Functions",
+      "EventBridge",
+      "DynamoDB",
+      "SQS",
+      "Terraform",
+      "X-Ray",
     ],
-	 links: [{ label: "Case", href: "#calendar-case" }],
-  },
-
-  {
-    title: "SolbegSoft / Helmes — Risk & Asset Protection",
-    period: "2021–2022",
-    summary:
-      "Protection software for automotive & property insurance. Migrated parts of a legacy monolith to microservices; delivered new features, QA hardening, and stability improvements.",
-    stack: [
-      "Java 8",
-      "Spring",
-      "EclipseLink ORM",
-      "Maven",
-      "Liquibase",
-      "SOAP",
-      "XML (SAXIF)",
-      "Tomcat",
-      "ActiveMQ",
-      "Ruleset",
-      "JUnit",
-      "Mockito",
-    ],
-	links: [{ label: "Case", href: "#risk-asset-protection" }],
+      links: [{ label: "Case", href: "#control-plane-notes" }],
   },
 
   {
@@ -108,21 +80,47 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Control-Plane: Event-driven tenant workflows",
-    period: "2024–2025",
+    title: "SolbegSoft / Helmes — Risk & Asset Protection",
+    period: "2021–2022",
     summary:
-    "Internal multi-tenant control-plane for a SaaS platform: orchestrates full tenant lifecycle (onboarding, configuration, offboarding) using AWS Step Functions + Lambda. Implemented saga patterns with compensations, idempotency, fan-out/fan-in, and async SQS jobs. Built observability with CloudWatch/X-Ray and fault-tolerant retries. Achieved −25% Lambda cost and −30% p95 latency through provisioned concurrency, batching, and payload optimizations.",
+      "Protection software for automotive & property insurance. Migrated parts of a legacy monolith to microservices; delivered new features, QA hardening, and stability improvements.",
     stack: [
-      "Java 21",
-      "Spring Boot",
-      "AWS Lambda",
-      "Step Functions",
-      "EventBridge",
-      "DynamoDB",
-      "SQS",
-      "Terraform",
-      "X-Ray",
+      "Java 8",
+      "Spring",
+      "EclipseLink ORM",
+      "Maven",
+      "Liquibase",
+      "SOAP",
+      "XML (SAXIF)",
+      "Tomcat",
+      "ActiveMQ",
+      "Ruleset",
+      "JUnit",
+      "Mockito",
     ],
-      links: [{ label: "Case", href: "#control-plane-notes" }],
+ links: [{ label: "Case", href: "#risk-asset-protection" }],
+  },
+
+  {
+    title: "Automotive Group — Calendar Management System",
+    period: "2020–2021",
+    summary:
+      "Internal Google-style calendar for an automotive group: schedule and manage events with filters, tags, and priorities; speaker profiles with photo + talk details; multi-user views for departments.",
+    stack: [
+      "Java 11",
+      "Spring",
+      "Hibernate",
+      "Gradle",
+      "MS SQL",
+      "Flyway",
+      "RabbitMQ",
+      "Docker",
+      "GitLab CI",
+      "Testcontainers",
+      "JUnit",
+      "Mockito",
+      "Swagger/OpenAPI",
+    ],
+  links: [{ label: "Case", href: "#calendar-case" }],
   },
 ];

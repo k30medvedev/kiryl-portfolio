@@ -23,7 +23,7 @@ export default function Page() {
       <ControlPlaneNotes />
 
       {/* ---- Shell Energy (2022–2024) ---- */}
-      <section id="shell-energy" className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target">
+      <section id="shell-energy" className="scroll-mt-40 md:scroll-mt-32 mx-auto max-w-6xl px-6 py-16 anchor-target">
         <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
           Shell Energy — Smart Metering Platform
         </h2>
@@ -73,7 +73,7 @@ export default function Page() {
       <RiskAssetCase />
 
       {/* ---- Calendar (2020–2021) ---- */}
-      <section id="calendar-case" className="scroll-mt-24 mx-auto max-w-6xl px-6 py-16 anchor-target">
+      <section id="calendar-case" className="scroll-mt-40 md:scroll-mt-32 mx-auto max-w-6xl px-6 py-16 anchor-target">
         <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
           Automotive Group — Calendar Management System
         </h2>
